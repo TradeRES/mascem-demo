@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://host/path/to/service/schema/inputSchema.json",
+    "type": "object",
+    "required": [
+        "playersBuses"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "playersBuses": {
+            "$id": "#/properties/playersBuses",
+            "type": "array",
+            "title": "Players buses",
+            "description": "Relates players to buses.",
+            "items": {
+                "$id": "#/properties/playersBuses/items",
+                "type": "object",
+                "title": "PlayerBus",
+                "description": "Relates a player to a bus.",
+                "required": [
+                    "player",
+                    "bus"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "player": {
+                        "$id": "#/properties/playerBuses/items/properties/player",
+                        "type": "string",
+                        "title": "Player",
+                        "description": "The player."
+                    },
+                    "bus": {
+                        "$id": "#/properties/playersBuses/items/properties/bus",
+                        "type": "integer",
+                        "title": "Bus",
+                        "description": "The bus."
+                    }
+                }
+            }
+        }
+    }
+}

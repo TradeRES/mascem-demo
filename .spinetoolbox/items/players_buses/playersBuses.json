@@ -1,0 +1,28 @@
+{
+    "playersBuses": [
+        {
+            "player": "Player 1",
+            "bus": 0 
+        },
+        {
+            "player": "Player 2",
+            "bus": 1
+        },
+        {
+            "player": "Player 3",
+            "bus": 2
+        },
+        {
+            "player": "Player 4",
+            "bus": 3
+        },
+        {
+            "player": "Player 5",
+            "bus": 4
+        },
+        {
+            "player": "Player 6",
+            "bus": 5
+        }
+    ]
+}

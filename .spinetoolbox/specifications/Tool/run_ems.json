@@ -1,0 +1,25 @@
+{
+    "name": "Run EMS",
+    "tooltype": "python",
+    "includes": [
+        "runMarket.py",
+        "resources/generalSchema.json"
+    ],
+    "description": "",
+    "inputfiles": [
+        "input.json"
+    ],
+    "inputfiles_opt": [],
+    "outputfiles": [
+        "outputMarket.json"
+    ],
+    "cmdline_args": [],
+    "execute_in_work": true,
+    "includes_main_path": "../../../run-ems",
+    "execution_settings": {
+        "kernel_spec_name": "",
+        "env": "",
+        "use_jupyter_console": false,
+        "executable": "C:\\Users\\btsv5\\anaconda3\\envs\\spine\\python.exe"
+    }
+}

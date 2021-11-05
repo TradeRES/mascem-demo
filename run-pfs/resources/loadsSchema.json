@@ -1,0 +1,556 @@
+{
+  "definitions": {
+    "id": {
+      "$id": "#/definitions/id",
+      "type": "integer",
+      "title": "Id",
+      "description": "Defines an identifier."
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://host/path/to/service/schema/inputSchema.json",
+  "type": "object",
+  "required": [
+    "network",
+    "powerflow"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "network": {
+      "$id": "#/properties/network",
+      "type": "object",
+      "title": "Network",
+      "description": "Defines the network details to consider in the service execution.",
+      "required": [
+        "name",
+        "elements"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$id": "#/properties/name",
+          "type": "string",
+          "title": "Name",
+          "description": "Name of the network."
+        },
+        "elements": {
+          "$id": "#/properties/elements",
+          "type": "object",
+          "title": "Elements",
+          "description": "The network elements.",
+          "required": [
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "loads": {
+              "$id": "#/properties/elements/loads",
+              "type": "array",
+              "title": "Loads",
+              "description": "Defines the network's loads.",
+              "items": {
+                "$id": "#/properties/elements/loads/items",
+                "type": "object",
+                "title": "Load",
+                "description": "Defines a load.",
+                "required": [
+                  "id",
+                  "name",
+                  "bus",
+                  "activePower"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "$id": "#/properties/elements/loads/items/properties/id",
+                    "$ref": "#/definitions/id",
+                    "title": "Id",
+                    "description": "The load's id"
+                  },
+                  "name": {
+                    "$id": "#/properties/elements/loads/items/properties/name",
+                    "type": "string",
+                    "title": "Name",
+                    "description": "The load's name"
+                  },
+                  "bus": {
+                    "$id": "#/properties/elements/loads/items/properties/bus",
+                    "$ref": "#/definitions/id",
+                    "title": "Bus",
+                    "description": "The bus id to which the load is connected."
+                  },
+                  "activePower": {
+                    "$id": "#/properties/elements/loads/items/properties/activePower",
+                    "type": "number",
+                    "title": "Active power",
+                    "description": "The active power of the load. Postive value -> load; Negative value -> generation."
+                  },
+                  "reactivePower": {
+                    "$id": "#/properties/elements/loads/items/properties/reactivePower",
+                    "type": "number",
+                    "title": "Reactive power",
+                    "description": "The reactive power of the load."
+                  },
+                  "percentagePowerImpedance": {
+                    "$id": "#/properties/elements/loads/items/properties/percentagePowerImpendace",
+                    "type": "number",
+                    "title": "Percentage power impedance voltage",
+                    "description": "Percentage of active power and reactive power that will be associated to constant impedance load at rated voltage."
+                  },
+                  "percentagePowerCurrent": {
+                    "$id": "#/properties/elements/loads/items/properties/percentagePowerCurrent",
+                    "type": "number",
+                    "title": "Percentage power current voltage",
+                    "description": "Percentage of active power and reactive power that will be associated to constant current load at rated voltage"
+                  },
+                  "nominalPower": {
+                    "$id": "#/properties/elements/loads/items/properties/nominalPower",
+                    "type": "number",
+                    "title": "Nominal power",
+                    "description": "Nominal power of the load."
+                  },
+                  "scalling": {
+                    "$id": "#/properties/elements/loads/items/properties/scalling",
+                    "type": "number",
+                    "title": "Scalling",
+                    "description": "An OPTIONAL scaling factor to be set customly."
+                  },
+                  "type": {
+                    "$id": "#/properties/elements/loads/items/properties/",
+                    "type": "string",
+                    "title": "Type",
+                    "description": "Type variable to classify the load: wye/delta.",
+                    "enum": [
+                      "wye",
+                      "delta"
+                    ]
+                  },
+                  "inService": {
+                    "$id": "#/properties/elements/loads/items/properties/inService",
+                    "type": "boolean",
+                    "title": "In service",
+                    "description": "True for in_service or False for out of service."
+                  },
+                  "maxActivePower": {
+                    "$id": "#/properties/elements/loads/items/properties/maxActivePower",
+                    "type": "number",
+                    "title": "Maximum active power",
+                    "description": "Maximum active power load - necessary for controllable loads in for OPF."
+                  },
+                  "minActivePower": {
+                    "$id": "#/properties/elements/loads/items/properties/minActivePower",
+                    "type": "number",
+                    "title": "Minimum active power",
+                    "description": "Minimum active power load - necessary for controllable loads in for OPF."
+                  },
+                  "maxReactivePower": {
+                    "$id": "#/properties/elements/loads/items/properties/maxReactivePower",
+                    "type": "number",
+                    "title": "Maximum reactive power",
+                    "description": "Maximum reactive power load - necessary for controllable loads in for OPF."
+                  },
+                  "minReactivePower": {
+                    "$id": "#/properties/elements/loads/items/properties/minReactivePower",
+                    "type": "number",
+                    "title": "Minimum reactive power",
+                    "description": "Minimum reactive power load - necessary for controllable loads in OPF."
+                  },
+                  "controllable": {
+                    "$id": "#/properties/elements/loads/items/properties/controllable",
+                    "type": "boolean",
+                    "title": "Controllable",
+                    "description": "States, whether a load is controllable or not. Only respected for OPF."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "powerflow": {
+            "$id": "#/properties/powerflow",
+            "type": "object",
+            "title": "Power Flow",
+            "description": "Defines the power flow algorithm to be executed.",
+            "oneOf": [
+                {
+                    "required": ["balancedAC"],
+                    "additionalProperties": false,
+                    "properties": {
+                        "balancedAC": {
+                            "$id": "#/properties/balancedAC",
+                            "type": "object",
+                            "title": "Balanced AC",
+                            "description": "Runs a power flow.",
+                            "additionalProperties": false,
+                            "properties": {
+                                "algorithm": {
+                                    "$id": "#/properties/balancedAC/algorithm",
+                                    "type": "string",
+                                    "title": "Algorithm",
+                                    "description": "Algorithm that is used to solve the power flow problem.",
+                                    "enum": [
+                                        "nr","iwamoto_nr",
+                                        "bfsw","gs",
+                                        "fdbx", "fdxb"
+                                    ]
+                                },
+                                "calculateVoltageAngles": {
+                                    "$id": "#/properties/balancedAC/calculateVoltageAngles",
+                                    "type": "boolean",
+                                    "title": "Calculate voltage angles",
+                                    "description": "Consider voltage angles in loadflow calculation.If True, voltage angles of ext_grids and transformer shifts are considered in the loadflow calculation. Considering the voltage angles is only necessary in meshed networks that are usually found in higher voltage levels. calculate_voltage_angles in “auto” mode defaults to: True, if the network voltage level is above 70 kV; False otherwise"
+                                },
+                                "init": {
+                                    "$id": "#/properties/balancedAC/init",
+                                    "type": "string",
+                                    "title": "Init",
+                                    "description": "Initialization method of the loadflow pandapower supports four methods for initializing the loadflow: “auto” - init defaults to “dc” if calculate_voltage_angles is True or “flat” otherwise. “flat”- flat start with voltage of 1.0pu and angle of 0° at all PQ-buses and 0° for PV buses as initial solution, the slack bus is initialized with the values provided in net[“ext_grid”]. “dc” - initial DC loadflow before the AC loadflow. The results of the DC loadflow are used as initial solution for the AC loadflow. Note that the DC loadflow only calculates voltage angles at PQ and PV buses, voltage magnitudes are still flat started. “results” - voltage vector of last loadflow from net.res_bus is used as initial solution. This can be useful to accelerate convergence in iterative loadflows like time series calculations. Considering the voltage angles might lead to non-convergence of the power flow in flat start. That is why in “auto” mode, init defaults to “dc” if calculate_voltage_angles is True or “flat” otherwise.",
+                                    "enum": [
+                                        "auto",
+                                        "flat",
+                                        "dc",
+                                        "results"
+                                    ]
+                                },
+                                "maxIteration": {
+                                    "$id": "#/properties/balancedAC/maxIteration",
+                                    "type": "integer",
+                                    "title": "Max iteration",
+                                    "description": "Maximum number of iterations carried out in the power flow algorithm.In “auto” mode, the default value depends on the power flow solver: 10 for “nr”. For three phase calculations, its extended to 3 * max_iteration"
+                                },
+                                "toleranceMva": {
+                                    "$id": "#/properties/balancedAC/toleranceMva",
+                                    "type": "integer",
+                                    "title": "Tolerance mva",
+                                    "description": "Loadflow termination condition referring to P / Q mismatch of node power in MVA."
+                                },
+                                "trafoModel": {
+                                    "$id": "#/properties/balancedAC/trafoModel",
+                                    "type": "string",
+                                    "title": "Trafo model",
+                                    "description": "Transformer equivalent models.“t” - transformer is modeled as equivalent with the T-model. “pi” - This is not recommended, since it is less exact than the T-model. So, for three phase load flow, its not implemented",
+                                    "enum": [
+                                        "t",
+                                        "pi"
+                                    ]
+                                },
+                                "trafoLoading": {
+                                    "$id": "#/properties/balancedAC/trafoLoading",
+                                    "type": "string",
+                                    "title": "Trafo loading",
+                                    "description": "Mode of calculation for transformer loading.Transformer loading can be calculated relative to the rated current or the rated power. In both cases the overall transformer loading is defined as the maximum loading on the two sides of the transformer. “current”- transformer loading is given as ratio of current. flow and rated current of the transformer. This is the recommended setting, since thermal as well as magnetic effects in the transformer depend on the current. - “power” - transformer loading is given as ratio of apparent power flow to the rated apparent power of the transformer."
+                                },
+                                "enforceQLims": {
+                                    "$id": "#/properties/balancedAC/enforceQLims",
+                                    "type": "boolean",
+                                    "title": "Enforce q lims",
+                                    "description": "Respect generator reactive power limits. If True, the reactive power limits in net.gen.max_q_mvar/min_q_mvar are respected in the loadflow. This is done by running a second loadflow if reactive power limits are violated at any generator, so that the runtime for the loadflow will increase if reactive power has to be curtailed. Enforce_q_lims only works if algorithm=”nr”"
+                                },
+                                "checkConnectivity": {
+                                    "$id": "#/properties/balancedAC/checkConnectivity",
+                                    "type": "boolean",
+                                    "title": "Check connectivity",
+                                    "description": "Perform an extra connectivity test after the conversion from pandapower to PYPOWER. If True, an extra connectivity test based on SciPy Compressed Sparse Graph Routines is perfomed. If check finds unsupplied buses, they are set out of service in the ppc."
+                                },
+                                "voltageDependLoads": {
+                                    "$id": "#/properties/balancedAC/voltageDependLoads",
+                                    "type": "boolean",
+                                    "title": "Voltage depend loads",
+                                    "description": "Consideration of voltage-dependent loads. If False, net.load.const_z_percent and net.load.const_i_percent are not considered, i.e. net.load.p_mw and net.load.q_mvar are considered as constant-power loads."
+                                },
+                                "considerLineTemperature": {
+                                    "$id": "#/properties/balancedAC/considerLineTemperature",
+                                    "type": "boolean",
+                                    "title": "Consider line temperature",
+                                    "description": "Adjustment of line impedance based on provided line temperature. If True, net.line must contain a column “temperature_degree_celsius”. The temperature dependency coefficient alpha must be provided in the net.line.alpha."
+                                },
+                                "runControl": {
+                                    "$id": "#/properties/balancedAC/runControl",
+                                    "type": "boolean",
+                                    "title": "Run Control",
+                                    "description": "Run Control"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "required": [
+                        "threePhasePowerFlow"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "threePhasePowerFlow": {
+                            "$id": "#/properties/threePhasePowerFlow",
+                            "type": "object",
+                            "title": "Three phase power flow",
+                            "description": "Performs Unbalanced/Asymmetric/Three Phase Load flow.",
+                            "additionalProperties": false,
+                            "properties": {
+                                "calculateVoltageAngles": {
+                                    "$id": "#/properties/threePhasePowerFlow/calculateVoltageAngles",
+                                    "type": "boolean",
+                                    "title": "Calculate voltage angles",
+                                    "description": "Consider voltage angles in loadflow calculation.If True, voltage angles of ext_grids and transformer shifts are considered in the loadflow calculation. Considering the voltage angles is only necessary in meshed networks that are usually found in higher voltage levels. calculate_voltage_angles in “auto” mode defaults to: True, if the network voltage level is above 70 kV; False otherwise"
+                                },
+                                "maxIteration": {
+                                    "$id": "#/properties/threePhasePowerFlow/maxIteration",
+                                    "type": "integer",
+                                    "title": "Max iteration",
+                                    "description": "Maximum number of iterations carried out in the power flow algorithm.In “auto” mode, the default value depends on the power flow solver: 10 for “nr”. For three phase calculations, its extended to 3 * max_iteration"
+                                },
+                                "toleranceMva": {
+                                    "$id": "#/properties/threePhasePowerFlow/toleranceMva",
+                                    "type": "integer",
+                                    "title": "Tolerance mva",
+                                    "description": "Loadflow termination condition referring to P / Q mismatch of node power in MVA."
+                                },
+                                "trafoModel": {
+                                    "$id": "#/properties/threePhasePowerFlow/trafoModel",
+                                    "type": "string",
+                                    "title": "Trafo model",
+                                    "description": "Transformer equivalent models.“t” - transformer is modeled as equivalent with the T-model. “pi” - This is not recommended, since it is less exact than the T-model. So, for three phase load flow, its not implemented",
+                                    "enum": [
+                                        "t",
+                                        "pi"
+                                    ]
+                                },
+                                "trafoLoading": {
+                                    "$id": "#/properties/threePhasePowerFlow/trafoLoading",
+                                    "type": "string",
+                                    "title": "Trafo loading",
+                                    "description": "Mode of calculation for transformer loading.Transformer loading can be calculated relative to the rated current or the rated power. In both cases the overall transformer loading is defined as the maximum loading on the two sides of the transformer. “current”- transformer loading is given as ratio of current. flow and rated current of the transformer. This is the recommended setting, since thermal as well as magnetic effects in the transformer depend on the current. - “power” - transformer loading is given as ratio of apparent power flow to the rated apparent power of the transformer."
+                                },
+                                "enforceQLims": {
+                                    "$id": "#/properties/threePhasePowerFlow/enforceQLims",
+                                    "type": "boolean",
+                                    "title": "Enforce q lims",
+                                    "description": "Respect generator reactive power limits. If True, the reactive power limits in net.gen.max_q_mvar/min_q_mvar are respected in the loadflow. This is done by running a second loadflow if reactive power limits are violated at any generator, so that the runtime for the loadflow will increase if reactive power has to be curtailed. Enforce_q_lims only works if algorithm=”nr”"
+                                },
+                                "checkConnectivity": {
+                                    "$id": "#/properties/threePhasePowerFlow/checkConnectivity",
+                                    "type": "boolean",
+                                    "title": "Check connectivity",
+                                    "description": "Perform an extra connectivity test after the conversion from pandapower to PYPOWER. If True, an extra connectivity test based on SciPy Compressed Sparse Graph Routines is perfomed. If check finds unsupplied buses, they are set out of service in the ppc."
+                                },
+                                "numba": {
+                                    "$id": "#/properties/threePhasePowerFlow/numba",
+                                    "type": "boolean",
+                                    "title": "Numba",
+                                    "description": "Activation of numba JIT compiler in the newton solver. If set to True, the numba JIT compiler is used to generate matrices for the powerflow, which leads to significant speed improvements."
+                                },
+                                "switchRxRatio": {
+                                    "$id": "#/properties/threePhasePowerFlow/switchRxRatio",
+                                    "type": "number",
+                                    "title": "Switch RX Ratio",
+                                    "description": "Rx_ratio of bus-bus-switches. If impedance is zero, buses connected by a closed bus-bus switch are fused to model an ideal bus. Otherwise, they are modelled as branches with resistance defined as z_ohm column in switch table and this parameter."
+                                },
+                                "deltaQ": {
+                                    "$id": "#/properties/threePhasePowerFlow/deltaQ",
+                                    "type": "number",
+                                    "title": "Delta Q",
+                                    "description": "Reactive power tolerance for option “enforce_q_lims” in kvar - helps convergence in some cases."
+                                },
+                                "debug": {
+                                    "$id": "#/properties/threePhasePowerFlow/debug",
+                                    "type": "boolean",
+                                    "title": "Debug",
+                                    "description": "If True, voltage values in each newton-raphson iteration are logged in the ppc."
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "required": [
+                        "dcPowerFlow"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "dcPowerFlow": {
+                            "$id": "#/properties/dcPowerFlow",
+                            "type": "object",
+                            "title": "DC power flow",
+                            "description": "Runs PANDAPOWER DC Flow.",
+                            "additionalProperties": false,
+                            "properties": {
+                                "trafoModel": {
+                                    "$id": "#/properties/dcPowerFlow/trafoModel",
+                                    "type": "string",
+                                    "title": "Trafo model",
+                                    "description": "Transformer equivalent models.“t” - transformer is modeled as equivalent with the T-model. “pi” - This is not recommended, since it is less exact than the T-model. So, for three phase load flow, its not implemented",
+                                    "enum": [
+                                        "t",
+                                        "pi"
+                                    ]
+                                },
+                                "trafoLoading": {
+                                    "$id": "#/properties/dcPowerFlow/trafoLoading",
+                                    "type": "string",
+                                    "title": "Trafo loading",
+                                    "description": "Mode of calculation for transformer loading.Transformer loading can be calculated relative to the rated current or the rated power. In both cases the overall transformer loading is defined as the maximum loading on the two sides of the transformer. “current”- transformer loading is given as ratio of current. flow and rated current of the transformer. This is the recommended setting, since thermal as well as magnetic effects in the transformer depend on the current. - “power” - transformer loading is given as ratio of apparent power flow to the rated apparent power of the transformer."
+                                },
+                                "checkConnectivity": {
+                                    "$id": "#/properties/dcPowerFlow/checkConnectivity",
+                                    "type": "boolean",
+                                    "title": "Check connectivity",
+                                    "description": "Perform an extra connectivity test after the conversion from pandapower to PYPOWER. If True, an extra connectivity test based on SciPy Compressed Sparse Graph Routines is perfomed. If check finds unsupplied buses, they are set out of service in the ppc."
+                                },
+                                "switchRxRatio": {
+                                    "$id": "#/properties/dcPowerFlow/switchRxRatio",
+                                    "type": "number",
+                                    "title": "Switch RX Ratio",
+                                    "description": "Rx_ratio of bus-bus-switches. If impedance is zero, buses connected by a closed bus-bus switch are fused to model an ideal bus. Otherwise, they are modelled as branches with resistance defined as z_ohm column in switch table and this parameter."
+                                },
+                                "trafo3wLosses": {
+                                    "$id": "#/properties/dcPowerFlow/trafo3wLosses",
+                                    "type": "string",
+                                    "title": "Trafo3w Losses",
+                                    "description": "Defines where open loop losses of three-winding transformers are considered. Valid options are “hv”, “mv”, “lv” for HV/MV/LV side or “star” for the star point.",
+                                    "enum": [
+                                        "hv",
+                                        "mv",
+                                        "lv",
+                                        "star"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "required": ["ACOPF"],
+                    "additionalProperties": false,
+                    "properties": {
+                        "ACOPF": {
+                            "$id": "#/properties/ACOPF",
+                            "type": "object",
+                            "title": "AC OPF",
+                            "description": "Runs the pandapower Optimal Power Flow.",
+                            "additionalProperties": false,
+                            "properties": {
+                                 "calculateVoltageAngles": {
+                                    "$id": "#/properties/ACOPF/calculateVoltageAngles",
+                                    "type": "boolean",
+                                    "title": "Calculate voltage angles",
+                                    "description": "Consider voltage angles in loadflow calculation.If True, voltage angles of ext_grids and transformer shifts are considered in the loadflow calculation. Considering the voltage angles is only necessary in meshed networks that are usually found in higher voltage levels. calculate_voltage_angles in “auto” mode defaults to: True, if the network voltage level is above 70 kV; False otherwise"
+                                },
+                                "checkConnectivity": {
+                                    "$id": "#/properties/ACOPF/checkConnectivity",
+                                    "type": "boolean",
+                                    "title": "Check connectivity",
+                                    "description": "Perform an extra connectivity test after the conversion from pandapower to PYPOWER. If True, an extra connectivity test based on SciPy Compressed Sparse Graph Routines is perfomed. If check finds unsupplied buses, they are set out of service in the ppc."
+                                },
+                                "verbose": {
+                                    "$id": "#/properties/ACOPF/verbose",
+                                    "type": "boolean",
+                                    "title": "Verbose",
+                                    "description": "If True, some basic information is printed"
+                                },
+                                "suppressWarnings": {
+                                    "$id": "#/properties/ACOPF/suppressWarnings",
+                                    "type": "boolean",
+                                    "title": "Suppress warnings",
+                                    "description": "Suppress warnings in pypower. If set to True, warnings are disabled during the loadflow. Because of the way data is processed in pypower, ComplexWarnings are raised during the loadflow. These warnings are suppressed by this option, however keep in mind all other pypower warnings are suppressed, too."
+                                },
+                                "init": {
+                                    "$id": "#/properties/ACOPF/init",
+                                    "type": "string",
+                                    "title": "Init",
+                                    "description": "Init of starting opf vector. Options are “flat” or “pf”. Starting solution vector (x0) for opf calculations is determined by this flag. Options are: “flat” (default): starting vector is (upper bound - lower bound) / 2 “pf”: a power flow is executed prior to the opf and the pf solution is the starting vector. This may improve convergence, but takes a longer runtime (which are probably neglectible for opf calculations).",
+                                    "enum": [
+                                        "flat","pf"
+                                    ]
+                                },
+                                "delta": {
+                                    "$id": "#/properties/ACOPF/delta",
+                                    "type": "number",
+                                    "title": "Delta",
+                                    "description": "Power tolerance."
+                                },
+                                "trafo3wLosses": {
+                                    "$id": "#/properties/ACOPF/trafo3wLosses",
+                                    "type": "string",
+                                    "title": "Trafo3w losses",
+                                    "description": "Defines where open loop losses of three-winding transformers are considered. Valid options are “hv”, “mv”, “lv” for HV/MV/LV side or “star” for the star point.",
+                                    "enum": ["hv","mv","lv","star"]
+                                },
+                                "considerLineTemperatures": {
+                                    "$id": "#/properties/ACOPF/considerLineTemperatures",
+                                    "type": "boolean",
+                                    "title": "Consider line temperatures",
+                                    "description": " Adjustment of line impedance based on provided line temperature. If True, net.line must contain a column “temperature_degree_celsius”. The temperature dependency coefficient alpha must be provided in the net.line.alpha column, otherwise the default value of 0.004 is used."
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "required": ["DCOPF"],
+                    "additionalProperties": false,
+                    "properties": {
+                          "DCOPF": {
+                            "$id": "#/properties/DCOPF",
+                            "type": "object",
+                            "title": "DC OPF",
+                            "description": "Runs the pandapower Optimal Power Flow.",
+                              "additionalProperties": false,
+                              "properties": {
+                                "verbose": {
+                                    "$id": "#/properties/DCOPF/verbose",
+                                    "type": "boolean",
+                                    "title": "Verbose",
+                                    "description": "If True, some basic information is printed."
+                                },
+                                  "checkConnectivity": {
+                                    "$id": "#/properties/DCOPF/checkConnectivity",
+                                    "type": "boolean",
+                                    "title": "Check connectivity",
+                                    "description": "Perform an extra connectivity test after the conversion from pandapower to PYPOWER. If True, an extra connectivity test based on SciPy Compressed Sparse Graph Routines is perfomed. If check finds unsupplied buses, they are set out of service in the ppc."
+                                },
+                                "suppressWarnings": {
+                                    "$id": "#/properties/DCOPF/suppressWarnings",
+                                    "type": "boolean",
+                                    "title": "Suppress warnings",
+                                    "description": "Suppress warnings in pypower."
+                                },
+                                "delta": {
+                                    "$id": "#/properties/DCOPF/delta",
+                                    "type": "number",
+                                    "title": "Delta",
+                                    "description": "Power tolerance."
+                                },
+                                  "switchRxRatio": {
+                                    "$id": "#/properties/DCOPF/switchRxRatio",
+                                    "type": "number",
+                                    "title": "Switch RX Ratio",
+                                    "description": "Rx_ratio of bus-bus-switches. If impedance is zero, buses connected by a closed bus-bus switch are fused to model an ideal bus. Otherwise, they are modelled as branches with resistance defined as z_ohm column in switch table and this parameter."
+                                },
+                                "trafo3wLosses": {
+                                    "$id": "#/properties/DCOPF/trafo3wLosses",
+                                    "type": "string",
+                                    "title": "Trafo3w Losses",
+                                    "description": "Defines where open loop losses of three-winding transformers are considered. Valid options are “hv”, “mv”, “lv” for HV/MV/LV side or “star” for the star point.",
+                                    "enum": [
+                                        "hv", "mv", "lv", "star"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+    "resultType": {
+        "$id": "#/properties/resultType",
+        "type": "string",
+        "title": "Result type",
+        "description": "The type of the result.",
+        "enum": [
+            "excel",
+            "json"
+        ]
+    }
+  }
+}

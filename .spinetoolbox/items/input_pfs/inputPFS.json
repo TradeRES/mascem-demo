@@ -1,0 +1,115 @@
+{
+    "network": {
+        "name": "Spine 1",
+        "elements": {
+            "buses": [
+                {
+                    "id": 0,
+                    "busName": "bus 1",
+                    "voltage": 12
+                },
+                {
+                    "id": 1,
+                    "busName": "bus 2",
+                    "voltage": 13
+                },
+                {
+                    "id": 2,
+                    "busName": "bus 3",
+                    "voltage": 14
+                },
+                {
+                    "id": 3,
+                    "busName": "bus 4",
+                    "voltage": 15
+                },
+                {
+                    "id": 4,
+                    "busName": "bus 5",
+                    "voltage": 16
+                },
+                {
+                    "id": 5,
+                    "busName": "bus 6",
+                    "voltage": 17
+                }
+            ],
+            "lines": [
+                {
+                    "id": 6,
+                    "name": "line 1",
+                    "initialBus": 0,
+                    "finalBus": 1,
+                    "length": 21,
+                    "lineCapacitance": 1.5,
+                    "lineReactance": 1.4,
+                    "lineResistance": 1.4,
+                    "zeroSequenceLineCapacitance": 1.1,
+                    "zeroSequenceLineReactance": 1.2,
+                    "zeroSequenceLineResistance": 1.3,
+                    "maximumThermal": 11
+                },
+                {
+                    "id": 7,
+                    "name": "line 1",
+                    "initialBus": 0,
+                    "finalBus": 2,
+                    "length": 21,
+                    "lineCapacitance": 1.5,
+                    "lineReactance": 1.4,
+                    "lineResistance": 1.4,
+                    "zeroSequenceLineCapacitance": 1.1,
+                    "zeroSequenceLineReactance": 1.2,
+                    "zeroSequenceLineResistance": 1.3,
+                    "maximumThermal": 11,
+                    "df": 1,
+                    "dielectricConductance": 1,
+                    "inService": false,
+                    "maxLoadingPercent": 1,
+                    "parallel": 1,
+                    "type": "cs",
+                    "zeroSequenceDielectricConductance": 1
+                },
+                {
+                    "id": 8,
+                    "name": "line 2",
+                    "initialBus": 3,
+                    "finalBus": 4,
+                    "length": 21,
+                    "type": "NAYY 4x120 SE"
+                }
+            ],
+            "externalGrids": [
+                {
+                    "id": 9,
+                    "name": "external grid 1",
+                    "bus": 0
+                },
+                {
+                    "id": 10,
+                    "name": "external grid 1",
+                    "bus": 1,
+                    "controllable": true,
+                    "degree": 20,
+                    "inService": true,
+                    "maxActivePower": 100,
+                    "maxReactivePower": 100,
+                    "maxRXRatio": 100,
+                    "maxShortCircuitApparentPower": 100,
+                    "minActivePower": 100,
+                    "minReactivePower": 100,
+                    "minRXRatio": 100,
+                    "minShortCircuitApparentPower": 100,
+                    "voltage": 100,
+                    "zeroSequenceMaxRXRatio": 100,
+                    "zeroSequenceMaxX0XRatio": 100
+                }
+            ]
+        }
+    },
+    "powerflow": {
+        "balancedAC": {
+        }
+    },
+    "resultType": "json"
+}

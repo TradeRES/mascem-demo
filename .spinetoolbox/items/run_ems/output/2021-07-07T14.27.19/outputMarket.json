@@ -1,0 +1,1159 @@
+{
+    "market": "MIBEL",
+    "session": {
+        "totalDemandByPeriodOffers": 4700,
+        "totalSupplySatisfied": 4600,
+        "session": 1,
+        "socialWelfare": 2500,
+        "totalSupplyByPeriodOffers": 4600,
+        "totalSupply": 4600,
+        "playersResult": [
+            {
+                "playerPeriodsResult": [
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 1,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 2,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 3,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 4,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 5,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 6,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 7,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 8,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 9,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 10,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 11,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 12,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 13,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 14,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 15,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 16,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 17,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 18,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 19,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 20,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 21,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 22,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 23,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 24,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    }
+                ],
+                "totalDemandSupply": 2400,
+                "totalCostsProfits": 60000,
+                "totalSatisfied": 2400,
+                "totalCostsProfitsByPeriodOffers": 60000,
+                "demandSupplyByPeriodOffers": 2400,
+                "playerId": "Player 1"
+            },
+            {
+                "playerPeriodsResult": [
+                    {
+                        "transactionType": "buying",
+                        "costs": 0,
+                        "period": 1,
+                        "marketPrice": 25,
+                        "satisfied": 0,
+                        "demand": 50
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 0,
+                        "period": 2,
+                        "marketPrice": 25,
+                        "satisfied": 0,
+                        "demand": 50
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 3,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 4,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 5,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 6,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 7,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 8,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 9,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 10,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 11,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 12,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 13,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 14,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 15,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 16,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 17,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 18,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 19,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 20,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 21,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 22,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 23,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    },
+                    {
+                        "transactionType": "buying",
+                        "costs": 2500,
+                        "period": 24,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "demand": 100
+                    }
+                ],
+                "totalDemandSupply": 2300,
+                "totalCostsProfits": 55000,
+                "totalSatisfied": 2200,
+                "totalCostsProfitsByPeriodOffers": 55000,
+                "demandSupplyByPeriodOffers": 2200,
+                "playerId": "Player 2"
+            },
+            {
+                "playerPeriodsResult": [
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 1,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 2,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 3,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 4,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 5,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 6,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 7,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 8,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 9,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 10,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 11,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 12,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 13,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 14,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 15,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 16,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 17,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 18,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 19,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 20,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 21,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 22,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 23,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 24,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    }
+                ],
+                "totalDemandSupply": 2400,
+                "totalCostsProfits": 60000,
+                "totalSatisfied": 2400,
+                "totalCostsProfitsByPeriodOffers": 60000,
+                "demandSupplyByPeriodOffers": 2400,
+                "playerId": "Player 3"
+            },
+            {
+                "playerPeriodsResult": [
+                    {
+                        "removalJustification": "Player 4 removed from exchange because of indivisibility condition!",
+                        "period": 1
+                    },
+                    {
+                        "removalJustification": "Player 4 removed from exchange because of indivisibility condition!",
+                        "period": 2
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 3,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 4,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 5,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 6,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 7,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 8,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 9,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 10,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 11,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 12,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 13,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 14,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 15,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 16,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 17,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 18,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 19,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 20,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 21,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 22,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 23,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    },
+                    {
+                        "transactionType": "selling",
+                        "profits": 2500,
+                        "period": 24,
+                        "marketPrice": 25,
+                        "satisfied": 100,
+                        "supply": 100
+                    }
+                ],
+                "totalDemandSupply": 2200,
+                "totalCostsProfits": 55000,
+                "totalSatisfied": 2200,
+                "totalCostsProfitsByPeriodOffers": 55000,
+                "demandSupplyByPeriodOffers": 2200,
+                "playerId": "Player 4"
+            }
+        ],
+        "consumptionSurplus": 2500,
+        "demandSatisfiedByPeriodOffers": 4600,
+        "averageMarketPrice": 25,
+        "totalDemand": 4700,
+        "totalDemandSatisfied": 4600,
+        "generationSurplus": 0,
+        "supplySatisfiedByPeriodOffers": 4600,
+        "periods": [
+            {
+                "period": 1,
+                "totalDemandByPeriodOffers": 150,
+                "totalDemand": 150,
+                "totalSupplySatisfied": 100,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 100,
+                "totalSupply": 100,
+                "totalDemandSatisfied": 100,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 100,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 100
+            },
+            {
+                "period": 2,
+                "totalDemandByPeriodOffers": 150,
+                "totalDemand": 150,
+                "totalSupplySatisfied": 100,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 100,
+                "totalSupply": 100,
+                "totalDemandSatisfied": 100,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 100,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 100
+            },
+            {
+                "period": 3,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 4,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 2500,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 2500,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 5,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 6,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 7,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 8,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 9,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 10,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 11,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 12,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 13,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 14,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 15,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 16,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 17,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 18,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 19,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 20,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 21,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 22,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 23,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            },
+            {
+                "period": 24,
+                "totalDemandByPeriodOffers": 200,
+                "totalDemand": 200,
+                "totalSupplySatisfied": 200,
+                "socialWelfare": 0,
+                "totalSupplyByPeriodOffers": 200,
+                "totalSupply": 200,
+                "totalDemandSatisfied": 200,
+                "generationSurplus": 0,
+                "supplySatisfiedByPeriodOffers": 200,
+                "consumptionSurplus": 0,
+                "demandSatisfiedByPeriodOffers": 200
+            }
+        ]
+    },
+    "marketType": "SPOT"
+}

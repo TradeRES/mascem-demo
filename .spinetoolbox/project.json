@@ -1,11 +1,105 @@
 {
     "project": {
         "version": 6,
-        "name": "toolbox-project-template",
-        "description": "This is a template for Spine Toolbox projects",
-        "specifications": {},
-        "connections": [],
+        "name": "ems-pfs",
+        "description": "",
+        "specifications": {
+            "Tool": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Tool/run_ems.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Tool/runpfs.json"
+                }
+            ]
+        },
+        "connections": [
+            {
+                "from": [
+                    "Input mibel",
+                    "right"
+                ],
+                "to": [
+                    "Run EMS",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Run EMS",
+                    "right"
+                ],
+                "to": [
+                    "Run PFS",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Players buses",
+                    "right"
+                ],
+                "to": [
+                    "Run PFS",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Input pfs",
+                    "right"
+                ],
+                "to": [
+                    "Run PFS",
+                    "left"
+                ]
+            }
+        ],
         "jumps": []
     },
-    "items": {}
+    "items": {
+        "Input mibel": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -173.11157925136746,
+            "y": 11.775139436023892,
+            "references": []
+        },
+        "Players buses": {
+            "type": "Data Connection",
+            "description": "",
+            "x": 24.275097335419236,
+            "y": -136.47018979419835,
+            "references": []
+        },
+        "Input pfs": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -4.982251784811687,
+            "y": 140.97018979419838,
+            "references": []
+        },
+        "Run EMS": {
+            "type": "Tool",
+            "description": "",
+            "x": -14.129894874745077,
+            "y": 8.763664260794862,
+            "specification": "Run EMS",
+            "execute_in_work": true,
+            "cmd_line_args": []
+        },
+        "Run PFS": {
+            "type": "Tool",
+            "description": "",
+            "x": 161.1115792513674,
+            "y": 12.809601515737366,
+            "specification": "runpfs",
+            "execute_in_work": true,
+            "cmd_line_args": []
+        }
+    }
 }

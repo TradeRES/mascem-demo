@@ -1,0 +1,799 @@
+{
+    "run": "mibel",
+    "input": {
+        "electricityMarket": {
+            "marketType": "DAY_AHEAD",
+            "sessionID": "1",
+            "numberOfPeriods": 24,
+            "numberOfOffersPerBid": 1,
+            "playersBids": [{
+                    "playerID": "Player 1",
+                    "bids": [{
+                            "period": 1,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 2,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 3,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 4,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 5,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 6,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 7,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 8,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 9,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 10,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 11,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 12,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 13,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 14,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 15,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 16,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 17,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 18,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 19,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 20,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 21,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 22,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 23,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 24,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "playerID": "Player 2",
+                    "bids": [{
+                            "period": 1,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 50.0
+                            }]
+                        },
+                        {
+                            "period": 2,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 50.0
+                            }]
+                        },
+                        {
+                            "period": 3,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 4,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 50.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 5,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 6,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 7,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 8,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 9,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 10,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 11,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 12,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 13,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 14,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 15,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 16,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 17,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 18,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 19,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 20,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 21,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 22,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 23,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 24,
+                            "transactionType": "BUY",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "playerID": "Player 3",
+                    "bids": [{
+                            "period": 1,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 2,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 3,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 4,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 5,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 6,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 7,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 8,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 9,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 10,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 11,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 12,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 13,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 14,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 15,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 16,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 17,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 18,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 19,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 20,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 21,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 22,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 23,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 24,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "playerID": "Player 4",
+                    "bids": [{
+                            "period": 1,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 2,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 3,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 4,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 5,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 6,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 7,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 8,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 9,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 10,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 11,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 12,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 13,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 14,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 15,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 16,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 17,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 18,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 19,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 20,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 21,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 22,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 23,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        },
+                        {
+                            "period": 24,
+                            "transactionType": "SELL",
+                            "offers": [{
+                                "price": 25.0,
+                                "power": 100.0
+                            }]
+                        }
+                    ],
+                    "complexConditions": {
+                        "indivisibility": true
+                    }
+                }
+            ]
+        }
+    }
+}

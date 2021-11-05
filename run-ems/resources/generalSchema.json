@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://host/path/to/service/schema/inputSchema.json",
+  "type": "object",
+  "required": [
+    "run",
+    "input"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "run": {
+      "$id": "#/properties/electricityMarket",
+      "type": "string",
+      "title": "Run",
+      "description": "Defines the electricity market algorithm to execute.",
+      "enum": [
+        "epex",
+        "mibel",
+        "nordpool",
+        "symmetricalpool",
+        "asymmetricalpool"
+      ]
+    },
+    "input": {
+      "$id": "#/properties/input",
+      "type": "object",
+      "title": "Input",
+      "description": "Defines de input of the electricity market to execute."
+    }
+  }
+}
