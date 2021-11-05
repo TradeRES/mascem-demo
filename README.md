@@ -1,6 +1,6 @@
-# EMS + PFS
+# MASCEM Demo
 
-There are five components inside the EMS+PFS Spine ToolBox project:
+There are five components inside the MASCEM Demo Spine ToolBox project:
 
 - **Input mibel** is the input of the **Run EMS** component and contains information regarding the players and their price/amount bids for each period. The schema that validates this input is available at ./run-ems/resources/generalSchema.json.
 - **Player buses** is one of the inputs of the **Run PFS** component. This file maps the players present in the MIBEL market to the buses of the network defined in the **Input pfs**.
